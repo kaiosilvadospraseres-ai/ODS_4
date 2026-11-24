@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Educa+: plataforma gratuita de apoio aos estudos.">
+  <title>Educa+ | Aprender transforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Educa+ página inicial">
+      <span class="brand-mark">E+</span><span>educa<span class="brand-plus">+</span></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio" class="nav-link active">Início</a>
+      <a href="#biblioteca" class="nav-link">Biblioteca</a>
+      <a href="#aulas" class="nav-link">Aulas</a>
+      <a href="#exercicios" class="nav-link">Exercícios</a>
+      <a href="#progresso" class="nav-link">Meu progresso</a>
+    </nav>
+    <a class="top-cta" href="#biblioteca">Começar a estudar <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> EDUCAÇÃO PARA TODOS</div>
+        <h1>Seu futuro começa<br>com <span>conhecimento.</span></h1>
+        <p class="hero-text">Aprenda no seu ritmo, explore novos conteúdos e descubra que estudar pode ser mais simples. Aqui, o conhecimento é gratuito e feito para todos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#biblioteca">Explorar conteúdos <span>→</span></a>
+          <a class="btn btn-quiet" href="#como-funciona">Conhecer a plataforma</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>📘</span><span>✏️</span><span>🎓</span></div>
+          <p><strong>Aprender é para todos.</strong><br><small>Comece hoje, sem pagar nada.</small></p>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-glow"></div>
+        <div class="floating-note note-one">✨ Aprenda no seu tempo</div>
+        <div class="study-card">
+          <div class="study-card-top"><span class="tiny-label">SEU ESPAÇO DE APRENDIZAGEM</span><span class="three-dots">•••</span></div>
+          <div class="book-illustration"><div class="book book-back"></div><div class="book book-front"><span>ABC</span><b>+</b></div><div class="pencil">✎</div></div>
+          <h3>Um passo de cada vez.</h3>
+          <p>Pequenos aprendizados constroem grandes possibilidades.</p>
+          <div class="mini-progress"><span></span></div>
+          <div class="progress-caption"><span>Continue aprendendo</span><strong>100% gratuito</strong></div>
+        </div>
+        <div class="floating-note note-two">💡 Conhecimento abre caminhos</div>
+        <div class="sparkle sparkle-one">✳</div><div class="sparkle sparkle-two">✦</div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>100%</strong><span>gratuito para estudar</span></div>
+      <div><strong>24/7</strong><span>aprenda quando quiser</span></div>
+      <div><strong>+ oportunidades</strong><span>um futuro com mais possibilidades</span></div>
+    </section>
+
+    <section class="section intro-section" id="como-funciona">
+      <div class="section-heading centered">
+        <span class="eyebrow">COMO PODEMOS AJUDAR?</span>
+        <h2>Aprender ficou mais <span>acessível.</span></h2>
+        <p>O Educa+ reúne ferramentas para apoiar estudantes que precisam de materiais, explicações e oportunidades para aprender.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon blue">📚</div><h3>Materiais gratuitos</h3><p>Encontre resumos e conteúdos de apoio para diferentes matérias em um só lugar.</p></article>
+        <article class="feature-card"><div class="feature-icon lilac">🌎</div><h3>Mais oportunidades</h3><p>Um espaço de aprendizagem aberto a todos, sem mensalidade ou cobrança.</p></article>
+        <article class="feature-card"><div class="feature-icon yellow">🎯</div><h3>Aprenda praticando</h3><p>Revise os assuntos com exercícios e acompanhe suas atividades concluídas.</p></article>
+      </div>
+    </section>
+
+    <section class="section library-section" id="biblioteca">
+      <div class="section-heading">
+        <span class="eyebrow">BIBLIOTECA DE ESTUDOS</span>
+        <h2>Conhecimento ao seu <span>alcance.</span></h2>
+        <p>Escolha uma matéria e comece a explorar. Todo conteúdo desta demonstração está disponível gratuitamente.</p>
+      </div>
+      <div class="filter-row">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar um conteúdo..." aria-label="Buscar conteúdo"></label>
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn selected" data-filter="Todas">Todas</button>
+          <button class="filter-btn" data-filter="Português">Português</button>
+          <button class="filter-btn" data-filter="Matemática">Matemática</button>
+          <button class="filter-btn" data-filter="Ciências">Ciências</button>
+          <button class="filter-btn" data-filter="História">História</button>
+        </div>
+      </div>
+      <div class="resource-grid" id="resourceGrid">
+        <article class="resource-card" data-subject="Português" data-title="Interpretação de texto"><div class="resource-cover cover-pink"><span>📖</span><small>PORTUGUÊS</small></div><div class="resource-info"><span class="tag">Leitura</span><h3>Interpretação de texto</h3><p>Aprenda a identificar ideias principais e compreender textos.</p><button class="text-link" data-open="interpretacao">Ver material <span>→</span></button></div></article>
+        <article class="resource-card" data-subject="Matemática" data-title="Operações básicas"><div class="resource-cover cover-blue"><span>➗</span><small>MATEMÁTICA</small></div><div class="resource-info"><span class="tag">Fundamentos</span><h3>Operações básicas</h3><p>Revise adição, subtração, multiplicação e divisão.</p><button class="text-link" data-open="operacoes">Ver material <span>→</span></button></div></article>
+        <article class="resource-card" data-subject="Ciências" data-title="Ciclo da água"><div class="resource-cover cover-green"><span>💧</span><small>CIÊNCIAS</small></div><div class="resource-info"><span class="tag">Natureza</span><h3>Ciclo da água</h3><p>Descubra como a água circula e se transforma na natureza.</p><button class="text-link" data-open="agua">Ver material <span>→</span></button></div></article>
+        <article class="resource-card" data-subject="História" data-title="Linha do tempo"><div class="resource-cover cover-yellow"><span>🏛️</span><small>HISTÓRIA</small></div><div class="resource-info"><span class="tag">História geral</span><h3>Linha do tempo</h3><p>Entenda como organizar acontecimentos históricos.</p><button class="text-link" data-open="tempo">Ver material <span>→</span></button></div></article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Nenhum conteúdo encontrado. Tente outra busca.</p>
+    </section>
+
+    <section class="lesson-band section" id="aulas">
+      <div class="lesson-copy"><span class="eyebrow light">AULAS E EXPLICAÇÕES</span><h2>Seu ritmo. Seu jeito.<br><span>Seu aprendizado.</span></h2><p>Estude com explicações diretas e exemplos simples. Você pode voltar ao conteúdo sempre que precisar.</p><a class="btn btn-white" href="#biblioteca">Escolher uma aula <span>→</span></a></div>
+      <div class="lesson-visual"><div class="lesson-sheet"><span class="sheet-icon">✍️</span><div class="sheet-line long"></div><div class="sheet-line"></div><div class="sheet-line medium"></div><div class="sheet-highlight">Aprender também é tentar!</div><div class="sheet-line long"></div><div class="sheet-line short"></div></div><div class="lesson-bubble">💡</div></div>
+    </section>
+
+    <section class="section quiz-section" id="exercicios">
+      <div class="section-heading centered">
+        <span class="eyebrow">HORA DE PRATICAR</span>
+        <h2>Teste o que você <span>aprendeu.</span></h2>
+        <p>Responda a uma pergunta rápida. Sua pontuação será salva no seu progresso neste dispositivo.</p>
+      </div>
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-top"><span class="quiz-label">DESAFIO RÁPIDO</span><span id="questionCount">PERGUNTA 1 DE 3</span></div>
+        <div class="quiz-progress"><span id="quizProgress"></span></div>
+        <div id="quizContent"></div>
+        <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+        <div class="quiz-actions"><button class="btn btn-primary" id="quizAction" disabled>Confirmar resposta</button><button class="reset-quiz" id="resetQuiz">Recomeçar</button></div>
+      </div>
+    </section>
+
+    <section class="section progress-section" id="progresso">
+      <div class="section-heading">
+        <span class="eyebrow">MEU PROGRESSO</span>
+        <h2>Cada passo <span>conta.</span></h2>
+        <p>Acompanhe suas atividades realizadas nesta plataforma. Seus dados ficam salvos neste navegador.</p>
+      </div>
+      <div class="progress-dashboard">
+        <div class="progress-main"><div class="progress-main-top"><div><span class="muted-label">ATIVIDADES CONCLUÍDAS</span><h3 id="completedCount">0</h3></div><div class="round-icon">🏆</div></div><div class="big-progress"><span id="bigProgress"></span></div><div class="progress-main-bottom"><span id="progressMessage">Seu caminho começa agora!</span><strong id="progressPercent">0%</strong></div></div>
+        <div class="progress-side"><div class="side-stat"><span class="side-icon">📝</span><div><strong id="quizScore">0</strong><small>respostas corretas</small></div></div><div class="side-stat"><span class="side-icon">📚</span><div><strong id="materialsViewed">0</strong><small>materiais consultados</small></div></div><button class="clear-progress" id="clearProgress">Limpar meu progresso</button></div>
+      </div>
+    </section>
+
+    <section class="final-cta section"><div><span class="eyebrow light">O CONHECIMENTO TRANSFORMA</span><h2>O próximo passo<br>é seu. 💙</h2><p>Não importa de onde você começa. O importante é ter a oportunidade de continuar.</p><a class="btn btn-white" href="#biblioteca">Começar agora <span>→</span></a></div><div class="cta-decoration">E+</div></section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark">E+</span><span>educa<span class="brand-plus">+</span></span></a><p>Educa+ — conhecimento que aproxima oportunidades.</p><span class="footer-note">Projeto educativo inspirado na ODS 4 • Educação de Qualidade</span></footer>
+
+  <div class="modal-backdrop" id="materialModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <span class="eyebrow" id="modalSubject">MATERIAL DE ESTUDO</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody" class="modal-body"></div>
+      <button class="btn btn-primary" id="markComplete">Marcar como estudado ✓</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
